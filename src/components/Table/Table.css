@@ -1,0 +1,58 @@
+.table-container{
+  background:white;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.08);
+
+  animation:slideUp 1s ease;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+thead{
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+  );
+}
+
+th{
+  color:white;
+  font-weight:600;
+  padding:18px;
+  text-align:left;
+}
+
+td{
+  padding:16px 18px;
+  color:#334155;
+}
+
+tbody tr{
+  transition:.3s ease;
+}
+
+tbody tr:nth-child(even){
+  background:#f8fafc;
+}
+
+tbody tr:hover{
+  background:#dbeafe;
+  transform:scale(1.01);
+}
+
+@keyframes slideUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
